@@ -7,6 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+click = "^8.1.3"
+
+[tool.poetry.scripts]
+day1 = "aoc2022.day1:main"
 
 
 [build-system]
