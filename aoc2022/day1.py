@@ -6,9 +6,6 @@ Find the Elves carrying the food with the most total calories.
 https://adventofcode.com/2022/day/1
 '''
 
-import functools
-import math
-
 import click
 
 
@@ -52,8 +49,8 @@ def main(input):
     for elf in sorted_elves[0:3]:
         click.secho(elf.total_calories(), fg="bright_black")
 
-    click.echo()
     calorie_sum = sum([elf.total_calories() for elf in sorted_elves[0:3]])
+    click.echo()
     click.secho("Sum of top three Elves:", fg="green")
     click.secho(calorie_sum, fg="green", bold=True)
     
